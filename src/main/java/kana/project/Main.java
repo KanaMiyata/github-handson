@@ -9,6 +9,7 @@ public class Main {
 
         System.out.println(person.getGender());
         System.out.println(person.getName());
+        System.out.println(person2.getJob());
 
 
     }
