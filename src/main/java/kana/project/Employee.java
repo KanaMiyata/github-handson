@@ -5,16 +5,18 @@ public class Employee {
     private int age;
     private String gender;
     private String job;
+    private String livingplace;
 
-    public Employee(String name, int age, String gender, String job) {
+    public Employee(String name, int age, String gender, String job,String livingplace) {
         this.name = name;
         this.age = age;
         this.gender = gender;
         this.job = job;
+        this.livingplace=livingplace;
     }
 
     public void getAllInfo() {
-        System.out.println(name + ", " + age + ", " + gender);
+        System.out.println(name + ", " + age + ", " + gender+job+livingplace);
     }
 
     public String getGender() {
@@ -27,6 +29,10 @@ public class Employee {
 
     public String getJob() {
         return job;
+    }
+    public String getlivingplace(){
+        return livingplace;
+
     }
 }
 
